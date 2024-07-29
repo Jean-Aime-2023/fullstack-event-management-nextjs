@@ -1,7 +1,6 @@
 import { authMiddleware, clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 const protectedRoutes = createRouteMatcher([
-    '/',
     '/events/:id',
     '/api/webhook/clerk',
     '/api/webhook/stripe',
